@@ -1,13 +1,18 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import {ZustandTimer} from '../components/ZustandTimer';
+import {RecoilTimer} from '../components/RecoilTimer';
+import { JotaiTimer } from '../components/JotaiTimer';
+import { RxJsTimer } from '../components/RxJsTimer';
+import styles from './app.module.css'
 
 export function App() {
+
   return (
-    <>
-      <NxWelcome title="react-app" />
-      <div />
-    </>
+    <div className={styles['container']}>
+      <ZustandTimer />
+      <RecoilTimer />
+      <JotaiTimer />
+      <RxJsTimer />
+    </div>
   );
 }
 

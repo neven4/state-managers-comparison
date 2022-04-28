@@ -1,0 +1,23 @@
+{
+  "root": "libs/reactive-rxjs",
+  "sourceRoot": "libs/reactive-rxjs/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/reactive-rxjs/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/reactive-rxjs"],
+      "options": {
+        "jestConfig": "libs/reactive-rxjs/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

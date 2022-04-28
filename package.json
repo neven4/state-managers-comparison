@@ -9,11 +9,18 @@
   },
   "private": true,
   "dependencies": {
+    "@xstate/react": "^3.0.0",
     "core-js": "^3.6.5",
+    "jotai": "^1.6.4",
+    "observable-hooks": "^4.2.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "recoil": "^0.7.2",
     "regenerator-runtime": "0.13.7",
-    "tslib": "^2.3.0"
+    "rxjs": "^7.5.5",
+    "tslib": "^2.3.0",
+    "xstate": "^4.31.0",
+    "zustand": "^4.0.0-rc.0"
   },
   "devDependencies": {
     "@nrwl/cli": "14.0.3",

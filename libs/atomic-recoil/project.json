@@ -1,0 +1,23 @@
+{
+  "root": "libs/atomic-recoil",
+  "sourceRoot": "libs/atomic-recoil/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/atomic-recoil/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/atomic-recoil"],
+      "options": {
+        "jestConfig": "libs/atomic-recoil/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

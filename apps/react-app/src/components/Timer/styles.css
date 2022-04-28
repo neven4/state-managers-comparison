@@ -1,0 +1,10 @@
+.timerContainer {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+}
+
+.timerWrapper {
+  padding: 20px;
+  border: 1px solid seagreen;
+  background-color: #f3f3f3;
+}

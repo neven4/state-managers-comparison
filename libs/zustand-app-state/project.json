@@ -1,0 +1,23 @@
+{
+  "root": "libs/zustand-app-state",
+  "sourceRoot": "libs/zustand-app-state/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/zustand-app-state/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/zustand-app-state"],
+      "options": {
+        "jestConfig": "libs/zustand-app-state/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

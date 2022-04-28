@@ -1,7 +1,13 @@
 {
   "version": 2,
   "projects": {
+    "atomic-jotai": "libs/atomic-jotai",
+    "atomic-recoil": "libs/atomic-recoil",
     "react-app": "apps/react-app",
-    "react-app-e2e": "apps/react-app-e2e"
+    "react-app-e2e": "apps/react-app-e2e",
+    "reactive-rxjs": "libs/reactive-rxjs",
+    "state-normalized": "libs/state-normalized",
+    "xstate": "libs/xstate",
+    "zustand-app-state": "libs/zustand-app-state"
   }
 }

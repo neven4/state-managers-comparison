@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@state-managers/atomic-jotai": ["libs/atomic-jotai/src/index.ts"],
+      "@state-managers/atomic-recoil": ["libs/atomic-recoil/src/index.ts"],
+      "@state-managers/reactive-rxjs": ["libs/reactive-rxjs/src/index.ts"],
+      "@state-managers/state-normalized": [
+        "libs/state-normalized/src/index.ts"
+      ],
+      "@state-managers/xstate": ["libs/xstate/src/index.ts"],
+      "@state-managers/zustand-app-state": [
+        "libs/zustand-app-state/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,23 @@
+{
+  "root": "libs/atomic-jotai",
+  "sourceRoot": "libs/atomic-jotai/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/atomic-jotai/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/atomic-jotai"],
+      "options": {
+        "jestConfig": "libs/atomic-jotai/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
